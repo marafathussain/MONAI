@@ -1,0 +1,45 @@
+MONAI version: 0.1.0+715.gf777a25.dirty
+Python version: 3.7.4 (default, Jul 18 2019, 19:34:02)  [GCC 5.4.0]
+Numpy version: 1.18.1
+Pytorch version: 1.5.0
+
+Optional dependencies:
+Pytorch Ignite version: 0.3.0
+Nibabel version: 3.1.0
+scikit-image version: 0.16.2
+Pillow version: 7.1.0
+Tensorboard version: 2.3.0
+gdown version: NOT INSTALLED or UNKNOWN VERSION.
+TorchVision version: 0.6.0
+ITK version: NOT INSTALLED or UNKNOWN VERSION.
+
+For details about installing the optional dependencies, please visit:
+    https://docs.monai.io/en/latest/installation.html#installing-the-recommended-dependencies
+
+MONAI version: 0.1.0+715.gf777a25.dirty
+Python version: 3.7.4 (default, Jul 18 2019, 19:34:02)  [GCC 5.4.0]
+Numpy version: 1.18.1
+Pytorch version: 1.5.0
+
+Optional dependencies:
+Pytorch Ignite version: 0.3.0
+Nibabel version: 3.1.0
+scikit-image version: 0.16.2
+Pillow version: 7.1.0
+Tensorboard version: 2.3.0
+gdown version: NOT INSTALLED or UNKNOWN VERSION.
+TorchVision version: 0.6.0
+ITK version: NOT INSTALLED or UNKNOWN VERSION.
+
+For details about installing the optional dependencies, please visit:
+    https://docs.monai.io/en/latest/installation.html#installing-the-recommended-dependencies
+
+zenodo 4-fold cross-validation; epoch: 500, no mean
+1/15 Load and cache transformed data:  [==                            ]2/15 Load and cache transformed data:  [====                          ]3/15 Load and cache transformed data:  [======                        ]4/15 Load and cache transformed data:  [========                      ]5/15 Load and cache transformed data:  [==========                    ]6/15 Load and cache transformed data:  [============                  ]7/15 Load and cache transformed data:  [==============                ]8/15 Load and cache transformed data:  [================              ]9/15 Load and cache transformed data:  [==================            ]10/15 Load and cache transformed data:  [====================          ]11/15 Load and cache transformed data:  [======================        ]12/15 Load and cache transformed data:  [========================      ]13/15 Load and cache transformed data:  [==========================    ]14/15 Load and cache transformed data:  [============================  ]15/15 Load and cache transformed data:  [==============================]
+1/5 Load and cache transformed data:  [======                        ]2/5 Load and cache transformed data:  [============                  ]3/5 Load and cache transformed data:  [==================            ]4/5 Load and cache transformed data:  [========================      ]5/5 Load and cache transformed data:  [==============================]
+Traceback (most recent call last):
+  File "zenodo_dynUNet_seg.py", line 361, in <module>
+    main()
+  File "zenodo_dynUNet_seg.py", line 284, in main
+    res_block=True
+TypeError: __init__() got an unexpected keyword argument 'upsample_kernel_size'

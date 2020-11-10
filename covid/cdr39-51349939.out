@@ -1,0 +1,80 @@
+MONAI version: 0.1.0+714.g3645b9f.dirty
+Python version: 3.7.4 (default, Jul 18 2019, 19:34:02)  [GCC 5.4.0]
+Numpy version: 1.18.1
+Pytorch version: 1.5.0
+
+Optional dependencies:
+Pytorch Ignite version: 0.3.0
+Nibabel version: 3.1.0
+scikit-image version: 0.16.2
+Pillow version: 7.1.0
+Tensorboard version: 2.3.0
+gdown version: NOT INSTALLED or UNKNOWN VERSION.
+TorchVision version: 0.6.0
+ITK version: NOT INSTALLED or UNKNOWN VERSION.
+
+For details about installing the optional dependencies, please visit:
+    https://docs.monai.io/en/latest/installation.html#installing-the-recommended-dependencies
+
+MONAI version: 0.1.0+714.g3645b9f.dirty
+Python version: 3.7.4 (default, Jul 18 2019, 19:34:02)  [GCC 5.4.0]
+Numpy version: 1.18.1
+Pytorch version: 1.5.0
+
+Optional dependencies:
+Pytorch Ignite version: 0.3.0
+Nibabel version: 3.1.0
+scikit-image version: 0.16.2
+Pillow version: 7.1.0
+Tensorboard version: 2.3.0
+gdown version: NOT INSTALLED or UNKNOWN VERSION.
+TorchVision version: 0.6.0
+ITK version: NOT INSTALLED or UNKNOWN VERSION.
+
+For details about installing the optional dependencies, please visit:
+    https://docs.monai.io/en/latest/installation.html#installing-the-recommended-dependencies
+
+Pet data segmentation - preliminary 25 data training and 10 validation - third try
+Traceback (most recent call last):
+  File "/project/6003292/marafath/MONAI/monai/transforms/utils.py", line 309, in apply_transform
+    return transform(data)
+  File "/project/6003292/marafath/MONAI/monai/transforms/intensity/dictionary.py", line 244, in __call__
+    d[key] = self.normalizer(d[key])
+  File "/project/6003292/marafath/MONAI/monai/transforms/intensity/array.py", line 235, in __call__
+    img = self._normalize(img)
+  File "/project/6003292/marafath/MONAI/monai/transforms/intensity/array.py", line 222, in _normalize
+    img[slices] = (img[slices] - self.subtrahend[slices]) / self.divisor[slices]
+IndexError: too many indices for array
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "pet_seg.py", line 360, in <module>
+    main()
+  File "pet_seg.py", line 254, in main
+    train_ds = CacheDataset(data=train_files, transform=train_transforms, cache_rate=1.0, num_workers=4)
+  File "/project/6003292/marafath/MONAI/monai/data/dataset.py", line 280, in __init__
+    [(i, data[i], transform.transforms) for i in range(self.cache_num)],
+  File "/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/python/3.7.4/lib/python3.7/multiprocessing/pool.py", line 268, in map
+    return self._map_async(func, iterable, mapstar, chunksize).get()
+  File "/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/python/3.7.4/lib/python3.7/multiprocessing/pool.py", line 657, in get
+    raise self._value
+  File "/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/python/3.7.4/lib/python3.7/multiprocessing/pool.py", line 121, in worker
+    result = (True, func(*args, **kwds))
+  File "/cvmfs/soft.computecanada.ca/easybuild/software/2017/Core/python/3.7.4/lib/python3.7/multiprocessing/pool.py", line 44, in mapstar
+    return list(map(*args))
+  File "/project/6003292/marafath/MONAI/monai/data/dataset.py", line 309, in _load_cache_item_thread
+    self._cache[i] = self._load_cache_item(item, transforms)
+  File "/project/6003292/marafath/MONAI/monai/data/dataset.py", line 297, in _load_cache_item
+    item = apply_transform(_transform, item)
+  File "/project/6003292/marafath/MONAI/monai/transforms/utils.py", line 311, in apply_transform
+    raise type(e)(f"Applying transform {transform}.").with_traceback(e.__traceback__)
+  File "/project/6003292/marafath/MONAI/monai/transforms/utils.py", line 309, in apply_transform
+    return transform(data)
+  File "/project/6003292/marafath/MONAI/monai/transforms/intensity/dictionary.py", line 244, in __call__
+    d[key] = self.normalizer(d[key])
+  File "/project/6003292/marafath/MONAI/monai/transforms/intensity/array.py", line 235, in __call__
+    img = self._normalize(img)
+  File "/project/6003292/marafath/MONAI/monai/transforms/intensity/array.py", line 222, in _normalize
+    img[slices] = (img[slices] - self.subtrahend[slices]) / self.divisor[slices]
+IndexError: Applying transform <monai.transforms.intensity.dictionary.NormalizeIntensityd object at 0x2ba5f5240610>.

@@ -1,0 +1,59 @@
+MONAI version: 0.1.0+560.gc89bf24.dirty
+Python version: 3.7.4 (default, Jul 18 2019, 19:34:02)  [GCC 5.4.0]
+Numpy version: 1.18.1
+Pytorch version: 1.5.0
+
+Optional dependencies:
+Pytorch Ignite version: 0.3.0
+Nibabel version: 3.1.0
+scikit-image version: 0.14.2
+Pillow version: 7.0.0
+Tensorboard version: 2.1.0
+
+For details about installing the optional dependencies, please visit:
+    https://docs.monai.io/en/latest/installation.html#installing-the-recommended-dependencies
+
+EU toy data 4-fold segmentation for micro-challenge
+----------
+epoch 1/100
+1/36, train_loss: 2.2033
+2/36, train_loss: 1.5092
+3/36, train_loss: 0.9547
+4/36, train_loss: 0.9719
+5/36, train_loss: 0.6925
+6/36, train_loss: 1.1109
+Traceback (most recent call last):
+  File "eu_96_data_dict.py", line 497, in <module>
+    main()
+  File "eu_96_data_dict.py", line 461, in main
+    loss.backward()
+  File "/home/marafath/ENV/lib/python3.7/site-packages/torch/tensor.py", line 198, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph)
+  File "/home/marafath/ENV/lib/python3.7/site-packages/torch/autograd/__init__.py", line 100, in backward
+    allow_unreachable=True)  # allow_unreachable flag
+RuntimeError: CUDA error: an illegal memory access was encountered (operator() at /pytorch/aten/src/ATen/native/cuda/CUDAScalar.cu:19)
+frame #0: c10::Error::Error(c10::SourceLocation, std::string const&) + 0x46 (0x2b42b2268536 in /home/marafath/ENV/lib/python3.7/site-packages/torch/lib/libc10.so)
+frame #1: <unknown function> + 0x2064db0 (0x2b4277318db0 in /home/marafath/ENV/lib/python3.7/site-packages/torch/lib/libtorch_cuda.so)
+frame #2: at::native::_local_scalar_dense_cuda(at::Tensor const&) + 0x27 (0x2b42773192d7 in /home/marafath/ENV/lib/python3.7/site-packages/torch/lib/libtorch_cuda.so)
+frame #3: <unknown function> + 0xf783c0 (0x2b427622c3c0 in /home/marafath/ENV/lib/python3.7/site-packages/torch/lib/libtorch_cuda.so)
+frame #4: <unknown function> + 0x10c5bed (0x2b4267330bed in /home/marafath/ENV/lib/python3.7/site-packages/torch/lib/libtorch_cpu.so)
+frame #5: at::native::item(at::Tensor const&) + 0xc9c (0x2b426702f30c in /home/marafath/ENV/lib/python3.7/site-packages/torch/lib/libtorch_cpu.so)
+frame #6: <unknown function> + 0x113c830 (0x2b42673a7830 in /home/marafath/ENV/lib/python3.7/site-packages/torch/lib/libtorch_cpu.so)
+frame #7: <unknown function> + 0x10c5bed (0x2b4267330bed in /home/marafath/ENV/lib/python3.7/site-packages/torch/lib/libtorch_cpu.so)
+frame #8: at::native::fill_(at::Tensor&, at::Tensor const&) + 0xf8 (0x2b4266e93ef8 in /home/marafath/ENV/lib/python3.7/site-packages/torch/lib/libtorch_cpu.so)
+frame #9: <unknown function> + 0x1137cb0 (0x2b42673a2cb0 in /home/marafath/ENV/lib/python3.7/site-packages/torch/lib/libtorch_cpu.so)
+frame #10: at::native::prelu_backward_cuda(at::Tensor const&, at::Tensor const&, at::Tensor const&) + 0xf5c (0x2b4276c7c00c in /home/marafath/ENV/lib/python3.7/site-packages/torch/lib/libtorch_cuda.so)
+frame #11: <unknown function> + 0xf8b411 (0x2b427623f411 in /home/marafath/ENV/lib/python3.7/site-packages/torch/lib/libtorch_cuda.so)
+frame #12: <unknown function> + 0xfc3dc3 (0x2b4276277dc3 in /home/marafath/ENV/lib/python3.7/site-packages/torch/lib/libtorch_cuda.so)
+frame #13: <unknown function> + 0x2ca3efe (0x2b4268f0eefe in /home/marafath/ENV/lib/python3.7/site-packages/torch/lib/libtorch_cpu.so)
+frame #14: <unknown function> + 0x10c41f3 (0x2b426732f1f3 in /home/marafath/ENV/lib/python3.7/site-packages/torch/lib/libtorch_cpu.so)
+frame #15: torch::autograd::generated::PreluBackward::apply(std::vector<at::Tensor, std::allocator<at::Tensor> >&&) + 0x1e8 (0x2b4268b0c098 in /home/marafath/ENV/lib/python3.7/site-packages/torch/lib/libtorch_cpu.so)
+frame #16: <unknown function> + 0x2d89c05 (0x2b4268ff4c05 in /home/marafath/ENV/lib/python3.7/site-packages/torch/lib/libtorch_cpu.so)
+frame #17: torch::autograd::Engine::evaluate_function(std::shared_ptr<torch::autograd::GraphTask>&, torch::autograd::Node*, torch::autograd::InputBuffer&) + 0x16f3 (0x2b4268ff1f03 in /home/marafath/ENV/lib/python3.7/site-packages/torch/lib/libtorch_cpu.so)
+frame #18: torch::autograd::Engine::thread_main(std::shared_ptr<torch::autograd::GraphTask> const&, bool) + 0x3d2 (0x2b4268ff2ce2 in /home/marafath/ENV/lib/python3.7/site-packages/torch/lib/libtorch_cpu.so)
+frame #19: torch::autograd::Engine::thread_init(int) + 0x39 (0x2b4268feb359 in /home/marafath/ENV/lib/python3.7/site-packages/torch/lib/libtorch_cpu.so)
+frame #20: torch::autograd::python::PythonEngine::thread_init(int) + 0x38 (0x2b42655dc998 in /home/marafath/ENV/lib/python3.7/site-packages/torch/lib/libtorch_python.so)
+frame #21: <unknown function> + 0xcb880 (0x2b4264994880 in /cvmfs/soft.computecanada.ca/nix/var/nix/profiles/16.09/lib/libstdc++.so.6)
+frame #22: <unknown function> + 0x71f4 (0x2b424ec111f4 in /cvmfs/soft.computecanada.ca/nix/store/63pk88rnmkzjblpxydvrmskkc8ci7cx6-glibc-2.24/lib/libpthread.so.0)
+frame #23: clone + 0x5f (0x2b424f61b16f in /cvmfs/soft.computecanada.ca/nix/store/63pk88rnmkzjblpxydvrmskkc8ci7cx6-glibc-2.24/lib/libc.so.6)
+

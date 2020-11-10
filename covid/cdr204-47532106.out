@@ -1,0 +1,249 @@
+MONAI version: 0.1.0+560.gc89bf24.dirty
+Python version: 3.7.4 (default, Jul 18 2019, 19:34:02)  [GCC 5.4.0]
+Numpy version: 1.18.1
+Pytorch version: 1.5.0
+
+Optional dependencies:
+Pytorch Ignite version: 0.3.0
+Nibabel version: 3.1.0
+scikit-image version: 0.14.2
+Pillow version: 7.0.0
+Tensorboard version: 2.1.0
+
+For details about installing the optional dependencies, please visit:
+    https://docs.monai.io/en/latest/installation.html#installing-the-recommended-dependencies
+
+2020-07-31 05:02:31.525303: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libnvinfer.so.6
+2020-07-31 05:02:31.570145: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libnvinfer_plugin.so.6
+Iran data: cropped and common resized, densenet+imhistnet-8bins+radiomics
+----------
+epoch 1/300
+1/203, train_loss: 2890.6274
+2/203, train_loss: 1547523.7500
+3/203, train_loss: 0.0000
+4/203, train_loss: 72044552.0000
+5/203, train_loss: 10283.3594
+6/203, train_loss: 22100240.0000
+7/203, train_loss: 1588795.6250
+8/203, train_loss: 21984486.0000
+9/203, train_loss: 68438832.0000
+10/203, train_loss: 544434816.0000
+11/203, train_loss: 8261241.0000
+12/203, train_loss: 0.0000
+13/203, train_loss: 2580460.0000
+14/203, train_loss: 1865247.8750
+15/203, train_loss: 181881760.0000
+16/203, train_loss: 83824312.0000
+17/203, train_loss: 915013824.0000
+18/203, train_loss: 220333.5781
+19/203, train_loss: 17448848.0000
+20/203, train_loss: 126970640.0000
+21/203, train_loss: 831104640.0000
+22/203, train_loss: 0.0000
+23/203, train_loss: 454359680.0000
+24/203, train_loss: 1168939.3750
+25/203, train_loss: 109663352.0000
+26/203, train_loss: 32361330.0000
+27/203, train_loss: 16855658.0000
+28/203, train_loss: 325013792.0000
+29/203, train_loss: 197266816.0000
+30/203, train_loss: 139582592.0000
+31/203, train_loss: 442016832.0000
+32/203, train_loss: 0.0000
+33/203, train_loss: 66488072.0000
+34/203, train_loss: 0.0000
+35/203, train_loss: 27224600.0000
+36/203, train_loss: 0.0000
+37/203, train_loss: 106174592.0000
+38/203, train_loss: 4293139.0000
+39/203, train_loss: 0.0000
+40/203, train_loss: 68220272.0000
+41/203, train_loss: 34351304.0000
+42/203, train_loss: 741558912.0000
+43/203, train_loss: 36198992.0000
+44/203, train_loss: 522884.2500
+45/203, train_loss: 99141280.0000
+46/203, train_loss: 1352303.2500
+47/203, train_loss: 0.0000
+48/203, train_loss: 30627780.0000
+49/203, train_loss: 141311792.0000
+50/203, train_loss: 22239072.0000
+51/203, train_loss: 1149373.2500
+52/203, train_loss: 21447892.0000
+53/203, train_loss: 2493380.5000
+54/203, train_loss: 0.0000
+55/203, train_loss: 0.0000
+56/203, train_loss: 37906884.0000
+57/203, train_loss: 1592332.5000
+58/203, train_loss: 29349060.0000
+59/203, train_loss: 11742391.0000
+60/203, train_loss: 0.0000
+61/203, train_loss: 5550356.0000
+62/203, train_loss: 282630.8750
+63/203, train_loss: 9567464.0000
+64/203, train_loss: 3826189.7500
+65/203, train_loss: 10193934.0000
+66/203, train_loss: 7151393.0000
+67/203, train_loss: 11836557.0000
+68/203, train_loss: 340421632.0000
+69/203, train_loss: 2641736.0000
+70/203, train_loss: 67911832.0000
+71/203, train_loss: 145119696.0000
+72/203, train_loss: 4822843.0000
+73/203, train_loss: 14683164.0000
+74/203, train_loss: 0.0000
+75/203, train_loss: 0.0000
+76/203, train_loss: 0.0000
+77/203, train_loss: 0.0000
+78/203, train_loss: 39288064.0000
+79/203, train_loss: 466869344.0000
+80/203, train_loss: 68581192.0000
+81/203, train_loss: 21329704.0000
+82/203, train_loss: 24430784.0000
+83/203, train_loss: 106838064.0000
+84/203, train_loss: 3854701.0000
+85/203, train_loss: 79309856.0000
+86/203, train_loss: 204383888.0000
+87/203, train_loss: 24971230.0000
+88/203, train_loss: 8545140.0000
+89/203, train_loss: 133422736.0000
+90/203, train_loss: 210818032.0000
+91/203, train_loss: 27066400.0000
+92/203, train_loss: 9482666.0000
+93/203, train_loss: 36921176.0000
+94/203, train_loss: 19072030.0000
+95/203, train_loss: 0.0000
+96/203, train_loss: 1335911552.0000
+97/203, train_loss: 10852291.0000
+98/203, train_loss: 316698656.0000
+99/203, train_loss: 461865216.0000
+100/203, train_loss: 507656320.0000
+101/203, train_loss: 1482560000.0000
+102/203, train_loss: 134704320.0000
+103/203, train_loss: 1219969.5000
+104/203, train_loss: 69353648.0000
+105/203, train_loss: 6798813.0000
+106/203, train_loss: 10707414.0000
+107/203, train_loss: 833362.6250
+108/203, train_loss: 10654591.0000
+109/203, train_loss: 1385869.7500
+110/203, train_loss: 603923776.0000
+111/203, train_loss: 84939224.0000
+112/203, train_loss: 622209.3750
+113/203, train_loss: 264354000.0000
+114/203, train_loss: 0.0000
+115/203, train_loss: 0.0000
+116/203, train_loss: 14611914.0000
+117/203, train_loss: 174203520.0000
+118/203, train_loss: 329249632.0000
+119/203, train_loss: 665569856.0000
+120/203, train_loss: 26800484.0000
+121/203, train_loss: 41310752.0000
+122/203, train_loss: 0.0000
+123/203, train_loss: 80911776.0000
+124/203, train_loss: 13586970.0000
+125/203, train_loss: 2924175.5000
+126/203, train_loss: 5987689.0000
+127/203, train_loss: 27623118.0000
+128/203, train_loss: 4709071.0000
+129/203, train_loss: 0.0000
+130/203, train_loss: 848340352.0000
+131/203, train_loss: 3485379.0000
+132/203, train_loss: 42426336.0000
+133/203, train_loss: 284091232.0000
+134/203, train_loss: 5619497.0000
+135/203, train_loss: 5195584.0000
+136/203, train_loss: 1734477952.0000
+137/203, train_loss: 0.0000
+138/203, train_loss: 101492016.0000
+139/203, train_loss: 836016576.0000
+140/203, train_loss: 869573120.0000
+141/203, train_loss: 30396992.0000
+142/203, train_loss: 2769750.0000
+143/203, train_loss: 0.0000
+144/203, train_loss: 3187222.2500
+145/203, train_loss: 589099264.0000
+146/203, train_loss: 34815744.0000
+147/203, train_loss: 935433728.0000
+148/203, train_loss: 1317253632.0000
+149/203, train_loss: 333091.5000
+150/203, train_loss: 16660053.0000
+151/203, train_loss: 6613332.0000
+152/203, train_loss: 314427.1562
+153/203, train_loss: 118096888.0000
+154/203, train_loss: 11222664.0000
+155/203, train_loss: 46314124.0000
+156/203, train_loss: 858670336.0000
+157/203, train_loss: 2399929.2500
+158/203, train_loss: 728026.4375
+159/203, train_loss: 7828645.5000
+160/203, train_loss: 480299.5000
+161/203, train_loss: 254057.8281
+162/203, train_loss: 40794156.0000
+163/203, train_loss: 11408307.0000
+164/203, train_loss: 36207372.0000
+165/203, train_loss: 155321232.0000
+166/203, train_loss: 30480946.0000
+167/203, train_loss: 4332524.0000
+168/203, train_loss: 371865248.0000
+169/203, train_loss: 554992768.0000
+170/203, train_loss: 9759358.0000
+171/203, train_loss: 91231880.0000
+172/203, train_loss: 1027189376.0000
+173/203, train_loss: 121074768.0000
+174/203, train_loss: 305012256.0000
+175/203, train_loss: 5484820.0000
+176/203, train_loss: 9949816.0000
+177/203, train_loss: 307587.0625
+178/203, train_loss: 34498368.0000
+179/203, train_loss: 480740544.0000
+180/203, train_loss: 60521600.0000
+181/203, train_loss: 124293936.0000
+182/203, train_loss: 322187136.0000
+183/203, train_loss: 369394752.0000
+184/203, train_loss: 0.0000
+185/203, train_loss: 139572496.0000
+186/203, train_loss: 27610088.0000
+187/203, train_loss: 220333584.0000
+188/203, train_loss: 11587355.0000
+189/203, train_loss: 27864352.0000
+190/203, train_loss: 21449044.0000
+191/203, train_loss: 66019504.0000
+192/203, train_loss: 36203060.0000
+193/203, train_loss: 5681710.0000
+194/203, train_loss: 14340908.0000
+195/203, train_loss: 64204752.0000
+196/203, train_loss: 100358264.0000
+197/203, train_loss: 331244.4375
+198/203, train_loss: 5661186.5000
+199/203, train_loss: 0.0000
+200/203, train_loss: 499229728.0000
+201/203, train_loss: 188100336.0000
+202/203, train_loss: 535029152.0000
+203/203, train_loss: 9475957.0000
+epoch 1 average loss: 146603031.3829
+Traceback (most recent call last):
+  File "ir_data_densenet_imhistnet__radiomics_multigpu.py", line 393, in <module>
+    main()
+  File "ir_data_densenet_imhistnet__radiomics_multigpu.py", line 374, in main
+    val_outputs = model(val_images1, val_images2)
+  File "/home/marafath/ENV/lib/python3.7/site-packages/torch/nn/modules/module.py", line 550, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/marafath/ENV/lib/python3.7/site-packages/torch/nn/parallel/data_parallel.py", line 155, in forward
+    outputs = self.parallel_apply(replicas, inputs, kwargs)
+  File "/home/marafath/ENV/lib/python3.7/site-packages/torch/nn/parallel/data_parallel.py", line 165, in parallel_apply
+    return parallel_apply(replicas, inputs, kwargs, self.device_ids[:len(replicas)])
+  File "/home/marafath/ENV/lib/python3.7/site-packages/torch/nn/parallel/parallel_apply.py", line 85, in parallel_apply
+    output.reraise()
+  File "/home/marafath/ENV/lib/python3.7/site-packages/torch/_utils.py", line 395, in reraise
+    raise self.exc_type(msg)
+RuntimeError: Caught RuntimeError in replica 0 on device 0.
+Original Traceback (most recent call last):
+  File "/home/marafath/ENV/lib/python3.7/site-packages/torch/nn/parallel/parallel_apply.py", line 60, in _worker
+    output = module(*input, **kwargs)
+  File "/home/marafath/ENV/lib/python3.7/site-packages/torch/nn/modules/module.py", line 550, in __call__
+    result = self.forward(*input, **kwargs)
+  File "ir_data_densenet_imhistnet__radiomics_multigpu.py", line 202, in forward
+    x_cat = torch.cat([x1, x2, y], 1)
+RuntimeError: Expected object of scalar type float but got scalar type double for sequence element 2.
+
